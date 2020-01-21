@@ -35,8 +35,8 @@ img {
     justify-content: space-between;
 }
 .logo {
-    width: 210px;
-    margin-top: 14px;
+    width: 200px;
+    margin-top: 10px;
 }
 .main-nav {
     display: flex;
