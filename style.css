@@ -58,8 +58,9 @@ img {
 /* HOME
 ------------------------------- */
 #home {
-    background-image: url("image/main-bg.jpg");
+    /*background-image: url("image/main-bg.jpg");
     min-height: 100vh;
+    */
 }
 #home .page-title {
     text-transform: none;
