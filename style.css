@@ -57,19 +57,22 @@ img {
 
 /* HOME
 ------------------------------- */
-*#home {
+#home {
+    background-image: url("image/main-bg.jpg");
     min-height: 100vh;
 }
 #home .page-title {
     text-transform: none;
+
 }
 .home-content {
     text-align: center;
     margin-top: 10%;
 }
 .home-content p {
-    font-size: 1.125rem;
+    font-size: 1.325rem;
     margin: 10px 0 42px;
+
 }
 
 /* 見出し */
