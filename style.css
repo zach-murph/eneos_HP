@@ -108,7 +108,7 @@ img {
 /* NEWS
 ------------------------------- */
 #news {
-
+    margin-bottom: 30px;
 }
 #news .page-title {
     text-align: center;
