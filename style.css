@@ -108,7 +108,7 @@ img {
 /* NEWS
 ------------------------------- */
 #news {
-    background-image: url("images/news-bg.jpg");
+    background-image: url("https://raw.githubusercontent.com/zach-murph/eneos_HP/master/image/news-bg.jpg");
     height: 270px;
     margin-bottom: 40px;
 }
