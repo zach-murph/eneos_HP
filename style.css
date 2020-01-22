@@ -60,6 +60,11 @@ img {
     background: #0090aa;
 }
 
+/* iframe */
+iframe {
+    width: 100%;
+}
+
 /* HEADER
 ------------------------------- */
 .page-header {
@@ -192,6 +197,27 @@ aside p {
     padding: 12px 10px;
 }
 
+/* CONTACT
+------------------------------- */
+
+/* 店舗情報・地図 */
+#location {
+    padding: 4% 0;
+}
+#location .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.location-info {
+    width: 22%;
+}
+.location-info p {
+    padding: 12px 10px;
+}
+.location-map {
+    width: 74%;
+}
+
 /* モバイル版
 ------------------------------- */
 @media (max-width: 600px) {
@@ -253,5 +279,19 @@ aside p {
     .post-title,
     .post-cat {
         margin-left: 80px;
+    }
+    
+        /* 店舗情報・地図 / SNS */
+    #location .wrapper,
+    #sns .wrapper {
+        flex-direction: column;
+    }
+    .location-info,
+    .location-map,
+    .sns-box {
+        width: 100%;
+    }
+    .sns-box {
+        margin-bottom: 30px;
     }
 }
