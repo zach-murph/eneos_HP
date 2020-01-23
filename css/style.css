@@ -225,6 +225,8 @@ table {
 table th, table td {
     border: dashed 1px orange;/**/
     /*破線 1px オレンジ*/
+    text-align: center;
+    vertical-align: middle;
 }
 .comment {
     margin: 10px 0px;
