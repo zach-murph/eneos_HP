@@ -96,6 +96,7 @@ img {
 ------------------------------- */
 #news .page-title {
     text-align: center;
+    margin: 50px;
 }
 .news-contents {
     display: flex;
