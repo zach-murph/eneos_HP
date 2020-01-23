@@ -123,7 +123,7 @@ img {
     text-align: center;
 }
 
-.grid {
+.photo-grid {
     display: grid;
     gap: 26px;
     grid-template-columns: repeat(1, 1fr);
