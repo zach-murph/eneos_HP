@@ -22,16 +22,10 @@ img {
     padding: 0 4%;
 }
 
-/* 大きな背景画像 */
-.big-bg {
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-}
 
 /* 見出し */
 .page-title {
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: 'Philosopher', serif;
     text-transform: uppercase;
     font-weight: normal;
@@ -40,11 +34,6 @@ img {
     font-size: 1.375rem;
     padding: 0 8px 8px;
     border-bottom: 2px #0bd solid;
-    font-weight: normal;
-}
-.sub-page-title {
-    font-size: 1.175rem;
-    padding: 8px 8px;
     font-weight: normal;
 }
 
@@ -58,11 +47,6 @@ img {
 }
 .button:hover {
     background: #0090aa;
-}
-
-/* iframe */
-iframe {
-    width: 100%;
 }
 
 /* HEADER
@@ -86,7 +70,7 @@ iframe {
     margin-left: 36px;
 }
 .main-nav a {
-    color: paleturquoise;
+    color: #432;
 }
 .main-nav a:hover {
     color: #0bd;
@@ -94,10 +78,7 @@ iframe {
 
 /* HOME
 ------------------------------- */
-#home {
-    background-image: url("images/main-bg.jpg");
-    min-height: 100vh;
-}
+
 #home .page-title {
     text-transform: none;
 }
@@ -112,12 +93,8 @@ iframe {
 
 /* NEWS
 ------------------------------- */
-#news {
-    margin-bottom: 30px;
-}
 #news .page-title {
     text-align: center;
-
 }
 .news-contents {
     display: flex;
@@ -127,8 +104,7 @@ iframe {
 
 /* 記事部分 */
 article {
-    width: 60%;
-    order: 1;
+    width: 74%;
 }
 .post-info {
     position: relative;
@@ -174,7 +150,6 @@ article p {
 /* サイドバー */
 aside {
     width: 22%;
-    order: 2;
 }
 .sub-menu {
     margin-bottom: 60px;
@@ -188,35 +163,48 @@ aside {
     padding: 10px;
     display: block;
 }
-.sub-page {
-    color: #432;
-    padding: 20px;
-    display: block;
+.sub-menu a:hover {
+    color: #0bd;
 }
 aside p {
     padding: 12px 10px;
 }
 
-/* CONTACT
+/* MENU
 ------------------------------- */
+.menu-content {
+    max-width: 560px;
+    margin-top: 10%;
+}
+.menu-content .page-title {
+    text-align: center;
+}
+.menu-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 0;
+}
 
-/* 店舗情報・地図 */
-#location {
-    padding: 4% 0;
+.grid {
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin-top: 6%;
+    margin-bottom: 50px;
 }
-#location .wrapper {
-    display: flex;
-    justify-content: space-between;
+table {
+    border-collapse: collapse;
+    border: solid 2px orange;/*表全体を線で囲う*/
+    width:300px
 }
-.location-info {
-    width: 22%;
+table th, table td {
+    border: dashed 1px orange;/**/
+    /*破線 1px オレンジ*/
 }
-.location-info p {
-    padding: 12px 10px;
+.comment {
+    margin: 10px 0px;
+    text-align:center;
 }
-.location-map {
-    width: 74%;
-}
+
 
 /* モバイル版
 ------------------------------- */
@@ -280,18 +268,17 @@ aside p {
     .post-cat {
         margin-left: 80px;
     }
-    
-        /* 店舗情報・地図 / SNS */
-    #location .wrapper,
-    #sns .wrapper {
-        flex-direction: column;
+
+    /* MENU */
+    .menu-content {
+        margin-top: 20%;
     }
-    .location-info,
-    .location-map,
-    .sns-box {
-        width: 100%;
+    .big-box {
+        grid-column: auto;
+        grid-row: auto;
     }
-    .sns-box {
-        margin-bottom: 30px;
+    .big-box img {
+        height: 100%;
     }
+    table {width: 100%}
 }
