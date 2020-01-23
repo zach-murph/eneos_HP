@@ -212,11 +212,9 @@ aside p {
 
 .photo-grid {
     display: grid;
-    gap: 26px;
+    gap: 20px;
     margin-top: 2%;
-    margin-bottom: 10px;
-    height: 37px;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: 1fr;
     justify-content: space-between;
 }
 table {
