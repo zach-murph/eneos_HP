@@ -200,20 +200,6 @@ aside p {
     margin-top: 6%;
     margin-bottom: 20px;
 }
-table {
-    border-collapse: collapse;
-    border: solid 2px orange;/*表全体を線で囲う*/
-    width:300px
-}
-table th, table td {
-    border: dashed 1px orange;/**/
-    /*破線 1px オレンジ*/
-}
-.comment {
-    margin: 10px 0px;
-    text-align:center;
-}
-
 /* photo
 ------------------------------- */
 .photo-content {
