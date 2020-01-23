@@ -173,6 +173,9 @@ aside p {
 
 /* MENU
 ------------------------------- */
+#news {
+    margin-bottom: 40px;
+}
 .menu-content {
     max-width: 560px;
     margin-top: 10%;
